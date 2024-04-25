@@ -5,7 +5,7 @@ Este proyecto sirve como base y guía para la creación de otros proyectos simil
 Link desplegado del backend: [https://myprojectjavaspringboot.onrender.com](https://myprojectjavaspringboot.onrender.com/swagger-ui/index.html)
 Creditos: https://render.com/
 
-![image](https://github.com/sergio185678/MyProjectJavaSpringBoot/assets/67492035/7908279b-d66e-4a4b-acb0-846589db83e8)
+![image](https://github.com/sergio185678/MyProjectJavaSpringBoot/assets/67492035/27da0391-b845-40c6-9250-3a5306e9934a)
 
 ## Estructura del Proyecto:
 
