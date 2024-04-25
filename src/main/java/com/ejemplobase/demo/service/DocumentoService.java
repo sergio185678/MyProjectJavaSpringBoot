@@ -62,6 +62,21 @@ public class DocumentoService implements IDocumentoService {
 
     @Override
     public void eliminar_documento(Integer id) {
-        this.documentoDao.deleteById(id);
+        Documento doc=this.documentoDao.findById(id).orElse(null);
+
+        String carpetaRelativa = "src/main/resources/uploads";
+        File carpeta = new File(carpetaRelativa);
+        String UPLOAD_DIR = carpeta.getAbsolutePath();
+
+        String filePath = UPLOAD_DIR + File.separator + doc.getRuta();
+        File fileToDelete = new File(filePath);
+
+        if (fileToDelete.exists()) {
+
+            if (fileToDelete.delete()) {
+                this.documentoDao.deleteById(id);
+            }
+        }
+
     }
 }
