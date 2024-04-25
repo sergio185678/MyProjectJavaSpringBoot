@@ -7,6 +7,7 @@ Creditos: https://render.com/
 
 ![image](https://github.com/sergio185678/MyProjectJavaSpringBoot/assets/67492035/27da0391-b845-40c6-9250-3a5306e9934a)
 
+Link del repositorio del frontend: https://github.com/sergio185678/FrontendBaseAngularWithJava
 ## Estructura del Proyecto:
 
 - **Controller**: Gestiona todas las solicitudes HTTP. Se integra con Service, Utils y Middleware mediante inyección de dependencias.
