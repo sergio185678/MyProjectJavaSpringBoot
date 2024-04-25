@@ -2,8 +2,10 @@
 
 Este proyecto sirve como base y guía para la creación de otros proyectos similares, implementando los conceptos básicos de una API REST utilizando Java y Spring Boot.
 
-Link desplegado del backend: https://myprojectjavaspringboot.onrender.com
+Link desplegado del backend: [https://myprojectjavaspringboot.onrender.com](https://myprojectjavaspringboot.onrender.com/swagger-ui/index.html)
 Creditos: https://render.com/
+
+![image](https://github.com/sergio185678/MyProjectJavaSpringBoot/assets/67492035/7908279b-d66e-4a4b-acb0-846589db83e8)
 
 ## Estructura del Proyecto:
 
