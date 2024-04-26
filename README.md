@@ -2,9 +2,12 @@
 
 Este proyecto sirve como base y guía para la creación de otros proyectos similares, implementando los conceptos básicos de una API REST utilizando Java y Spring Boot.
 
-Link desplegado del backend: https://myprojectjavaspringboot.onrender.com
+Link desplegado del backend: [https://myprojectjavaspringboot.onrender.com](https://myprojectjavaspringboot.onrender.com/swagger-ui/index.html)
 Creditos: https://render.com/
 
+![image](https://github.com/sergio185678/MyProjectJavaSpringBoot/assets/67492035/27da0391-b845-40c6-9250-3a5306e9934a)
+
+Link del repositorio del frontend: https://github.com/sergio185678/FrontendBaseAngularWithJava
 ## Estructura del Proyecto:
 
 - **Controller**: Gestiona todas las solicitudes HTTP. Se integra con Service, Utils y Middleware mediante inyección de dependencias.
