@@ -67,7 +67,7 @@ public class DocumentoService implements IDocumentoService {
 
             // Guardar el archivo en el sistema de archivos
             Files.write(filePath, file.getBytes());
-    
+
             // Construir la URL para acceder al archivo cargado
             String fileDownloadUri = ServletUriComponentsBuilder.fromCurrentContextPath()
                     .path("/files/")
