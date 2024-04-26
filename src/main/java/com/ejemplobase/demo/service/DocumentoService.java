@@ -61,13 +61,13 @@ public class DocumentoService implements IDocumentoService {
         try{
 
             String absolutePath = resourceLoader.getResource(uploadPath).getFile().getAbsolutePath();
-
+            System.out.println(absolutePath);
             // Ruta completa donde se guardará el archivo
             Path filePath = Paths.get(absolutePath + File.separator +  fileName);
 
             // Guardar el archivo en el sistema de archivos
             Files.write(filePath, file.getBytes());
-
+    
             // Construir la URL para acceder al archivo cargado
             String fileDownloadUri = ServletUriComponentsBuilder.fromCurrentContextPath()
                     .path("/files/")
