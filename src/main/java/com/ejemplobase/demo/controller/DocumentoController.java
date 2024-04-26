@@ -6,6 +6,7 @@ import com.ejemplobase.demo.model.entity.Documento;
 import com.ejemplobase.demo.model.payload.MensajeResponse;
 import com.ejemplobase.demo.service.interfaces.IDocumentoService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.io.FileSystemResource;
 import org.springframework.core.io.Resource;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
@@ -86,25 +87,15 @@ public class DocumentoController {
                 ,HttpStatus.OK);
     }
 
-    @GetMapping("/download_file/{archivo}")
-    public ResponseEntity<Resource> descargarArchivo(@PathVariable String archivo,@RequestHeader("Authorization") String token) throws IOException {
-
-        ResponseEntity<?> authenticated=authenticationMiddleware.authenticate(token);
-        if(authenticated==null){
-            Path archivoPath = Paths.get(obtener_rutapadre()+"/"+archivo);
-            Resource resource = new org.springframework.core.io.FileSystemResource(archivoPath);
-
-            HttpHeaders headers = new HttpHeaders();
-            headers.add(HttpHeaders.CONTENT_DISPOSITION, "attachment; filename="+archivo);
-            headers.add(HttpHeaders.CONTENT_TYPE, MediaType.APPLICATION_OCTET_STREAM_VALUE);
-
-            return ResponseEntity.ok()
-                    .headers(headers)
-                    .contentLength(Files.size(archivoPath))
-                    .contentType(MediaType.parseMediaType("application/octet-stream"))
-                    .body(resource);
-        }
-        return null;
+    @GetMapping("/get_url/{id}")
+    public ResponseEntity<?> obtener_ruta(@PathVariable Integer id) {
+        Documento documento=documentoService.obtenerDocumento(id);
+        return new  ResponseEntity<>(
+                MensajeResponse.builder()
+                        .mensaje("Ruta del archivo.")
+                        .object(documento.getRuta())
+                        .build()
+                ,HttpStatus.OK);
     }
 
     @DeleteMapping("/file/{id}")
