@@ -87,7 +87,7 @@ public class CargoController {
         }
         return new  ResponseEntity<>(
                 MensajeResponse.builder()
-                        .mensaje("lista de cargos")
+                        .mensaje("lista de usuarios")
                         .object(usuarios.stream()
                                 .map(this::convertirAUsuarioDTO)
                                 .collect(Collectors.toList()))

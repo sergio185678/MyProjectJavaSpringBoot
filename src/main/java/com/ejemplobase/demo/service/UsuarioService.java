@@ -68,7 +68,7 @@ public class UsuarioService implements IUsuarioService {
     @Transactional
     public Usuario editar_usuario(UsuarioEditarDto usuarioEditarDto, Integer id) {
 
-        Usuario usuario_existente=usario_exit_id(id);
+        Usuario usuario_existente=obtener_usuario(id);
         if(usuario_existente==null){
             return null;
         }
@@ -111,13 +111,6 @@ public class UsuarioService implements IUsuarioService {
 
         Usuario usuario_exisstente=usuarioDao.findByCorreo(correo).orElse(null);
         return usuario_exisstente;
-    }
-
-    @Override
-    public Usuario usario_exit_id(Integer id) {
-
-        Usuario usuario=usuarioDao.findById(id).orElse(null);
-        return usuario;
     }
 
     @Override

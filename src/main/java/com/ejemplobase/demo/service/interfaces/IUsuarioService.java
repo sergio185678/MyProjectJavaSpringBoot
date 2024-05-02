@@ -17,6 +17,5 @@ public interface IUsuarioService {
     void eliminar_usuario(Integer id);
     Usuario obtener_usuario_mediante_credenciales(LoginDto loginDto);
     Usuario usuario_existent(String correo);
-    Usuario usario_exit_id(Integer id);
     Page<Usuario> obtenerusuariopaginado(Integer page, Integer size, String searchTerm);
 }
