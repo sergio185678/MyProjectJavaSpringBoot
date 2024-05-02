@@ -2,6 +2,12 @@
 
 Este proyecto sirve como base y guía para la creación de otros proyectos similares, implementando los conceptos básicos de una API REST utilizando Java y Spring Boot.
 
+Nota: El backend desplegado actualmente no admite la gestión de archivos debido a las limitaciones de la capa gratuita de Render con Docker, así como a mi falta de experiencia en Docker. Además, debido a estas limitaciones, la inicialización del backend puede ser bastante lenta, lo que podría resultar en que la aplicación no cargue de inmediato. Si esto sucede, te recomiendo dejarla cargando; eventualmente, se inicializará y la aplicación funcionará correctamente.
+
+Usuario con cargo administrador: 
+  - Email: sergio1@gmail.com
+  - Contraseña: 123
+  - 
 Link desplegado del backend: [https://myprojectjavaspringboot.onrender.com](https://myprojectjavaspringboot.onrender.com/swagger-ui/index.html)
 Creditos: https://render.com/
 
