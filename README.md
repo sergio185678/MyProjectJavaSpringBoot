@@ -7,7 +7,7 @@ Nota: El backend desplegado actualmente no admite la gestión de archivos debido
 Usuario con cargo administrador: 
   - Email: sergio1@gmail.com
   - Contraseña: 123
-  - 
+    
 Link desplegado del backend: [https://myprojectjavaspringboot.onrender.com](https://myprojectjavaspringboot.onrender.com/swagger-ui/index.html)
 Creditos: https://render.com/
 
